@@ -2,193 +2,430 @@
 <html lang="tr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Biosys Biyomedikal Mühendislik A.Ş. | Gizlilik Politikası / Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biosys Biyomedikal Mühendislik A.Ş. | Gizlilik Bildirimi / Privacy Notice</title>
+  <meta name="description" content="Bio2xy-Monitor için iki dilli kapsamlı gizlilik bildirimi: KVKK/GDPR ile uyumlu, veri akışı, güvenlik, saklama ve haklar.">
   <style>
-    :root{--fg:#111827;--muted:#6b7280;--line:#e5e7eb;--bg:#ffffff}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);max-width:980px;margin:40px auto;padding:0 18px;line-height:1.7}
-    h1{font-size:1.9rem;margin:0 0 10px;line-height:1.25}
-    h2{font-size:1.25rem;margin:28px 0 10px}
-    h3{font-size:1.05rem;margin:20px 0 8px}
-    p,ul,ol{margin:10px 0}
+    :root { --fg:#0f172a; --muted:#475569; --accent:#0ea5e9; --bg:#ffffff; --card:#f8fafc; --border:#e2e8f0; }
+    html,body{background:var(--bg);color:var(--fg);}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.65;margin:0}
+    .wrap{max-width:1100px;margin:0 auto;padding:32px 16px}
+    header{padding:28px 0 16px;border-bottom:1px solid var(--border)}
+    h1,h2,h3{line-height:1.25;margin:1.2em 0 .5em}
+    h1{font-size:clamp(28px,3vw,36px)}
+    h2{font-size:clamp(21px,2.4vw,28px)}
+    h3{font-size:clamp(18px,2vw,22px)}
+    p,li{color:var(--fg)}
     .muted{color:var(--muted)}
-    .card{border:1px solid var(--line);border-radius:12px;padding:16px;margin:18px 0;background:#fff}
-    hr{border:none;border-top:1px solid var(--line);margin:28px 0}
-    table{width:100%;border-collapse:collapse;margin:10px 0}
-    th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}
-    th{background:#fafafa}
-    footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted)}
+    .toc{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin:18px 0}
+    .toc a{text-decoration:none;color:var(--fg)}
+    .tag{display:inline-block;padding:.2em .6em;border:1px solid var(--border);border-radius:999px;font-size:12px;margin-right:6px;background:#fff}
+    .callout{background:#ecfeff;border:1px solid #a5f3fc;border-radius:12px;padding:12px;margin:12px 0}
+    .warn{background:#fff7ed;border:1px solid #fed7aa}
+    table{width:100%;border-collapse:collapse;margin:14px 0;background:#fff;border:1px solid var(--border)}
+    th,td{text-align:left;padding:10px;border-top:1px solid var(--border);vertical-align:top}
+    th{background:#f1f5f9}
+    .grid{display:grid;gap:12px}
+    @media(min-width:880px){.grid-2{grid-template-columns:1fr 1fr} .grid-3{grid-template-columns:repeat(3,1fr)}}
+    footer{margin-top:48px;padding:28px 0;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+    .lang-banner{margin-top:24px;font-size:14px;color:var(--muted)}
     a{color:inherit}
-    .langswitch a{margin-right:12px;text-decoration:none}
   </style>
 </head>
 <body>
-  <div class="langswitch muted">
-    <a href="#tr">Türkçe</a> · <a href="#en">English</a>
+  <div class="wrap">
+    <header>
+      <h1>Biosys Biyomedikal Mühendislik A.Ş. — Gizlilik Bildirimi / Privacy Notice</h1>
+      <div class="muted">Sürüm: v1.1 • Son güncelleme / Last updated: <strong>2025-10-20</strong></div>
+      <p class="muted">Bu belge iki dilde tam metin içerir: Türkçe ve İngilizce. / This document contains full texts in Turkish and English.</p>
+      <div><span class="tag">KVKK</span><span class="tag">GDPR</span><span class="tag">Medical Device Context</span></div>
+    </header>
+
+    <!-- ============ TURKISH FULL TEXT ============ -->
+    <section id="tr">
+      <div class="lang-banner">— Türkçe Metin —</div>
+      <nav class="toc">
+        <strong>İçindekiler</strong>
+        <ol>
+          <li><a href="#tr-1">Biz Kimiz ve Bildirimin Kapsamı</a></li>
+          <li><a href="#tr-2">Tanımlar</a></li>
+          <li><a href="#tr-3">Uygulamanın Rolü ve Mimari</a></li>
+          <li><a href="#tr-4">Toplanmayan/Kullanılmayan Veri Kategorileri</a></li>
+          <li><a href="#tr-5">Yalnızca Ekranda Görüntülenen Ölçümler</a></li>
+          <li><a href="#tr-6">İşleme Amaçları ve Hukuki Dayanaklar</a></li>
+          <li><a href="#tr-7">Paylaşım, Aktarım ve Alıcılar</a></li>
+          <li><a href="#tr-8">Güvenlik Önlemleri</a></li>
+          <li><a href="#tr-9">Saklama (Retansiyon) Politikası</a></li>
+          <li><a href="#tr-10">Haklarınız ve Başvuru Mekanizması (KVKK/GDPR)</a></li>
+          <li><a href="#tr-11">Çocuklara İlişkin Hükümler</a></li>
+          <li><a href="#tr-12">Çerezler, SDK’lar ve Benzeri Teknolojiler</a></li>
+          <li><a href="#tr-13">Değişiklikler ve Bildirimler</a></li>
+          <li><a href="#tr-14">İletişim Bilgileri</a></li>
+          <li><a href="#tr-a">EK-A: Google Play Data Safety Eşlemesi</a></li>
+          <li><a href="#tr-b">EK-B: Kayıt Tutma (ROPA) Özeti</a></li>
+        </ol>
+      </nav>
+
+      <section id="tr-1">
+        <h2>1) Biz Kimiz ve Bildirimin Kapsamı</h2>
+        <p><strong>Veri Sorumlusu:</strong> Biosys Biyomedikal Mühendislik A.Ş. (“Biosys”)</p>
+        <p><strong>Adres:</strong> Üniversiteler Mahallesi İhsan Doğramacı Bulvarı No:23/C, ODTÜ Teknokent, Çankaya/ANKARA, TÜRKİYE</p>
+        <p><strong>E-posta:</strong> <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a></p>
+        <p>Bu bildirim; Bio2xy-Monitor mobil uygulaması, destek sayfaları ve müşteri iletişim kanalları için geçerlidir.</p>
+        <div class="callout"><strong>Özet:</strong> Uygulama, ev tipi ventilatör cihazından gelen ölçümleri <u>yalnızca yerel olarak görüntüler</u>. Uygulama; kişisel verileri kendi adına <u>toplamaz</u>, <u>kalıcı olarak saklamaz</u>, <u>iletmez</u> veya <u>paylaşmaz</u>.</div>
+      </section>
+
+      <section id="tr-2">
+        <h2>2) Tanımlar</h2>
+        <p><strong>Kişisel Veri:</strong> Bir kişiyi tanımlayan veya tanımlanabilir kılan her türlü bilgi (KVKK/GDPR). <br>
+           <strong>Sağlık Verisi:</strong> Bir kişinin sağlık durumuna ilişkin özel nitelikli kişisel veri. <br>
+           <strong>İşleme:</strong> Kişisel veriler üzerinde yapılan her türlü işlem (toplama, saklama, aktarma vb.).</p>
+      </section>
+
+      <section id="tr-3">
+        <h2>3) Uygulamanın Rolü ve Mimari</h2>
+        <ul>
+          <li><strong>Yerel işlem:</strong> Ventilatör cihazından gelen ölçümler cihaz üzerinde <em>geçici</em> olarak işlenir ve ekranda gösterilir.</li>
+          <li><strong>Veri akışı:</strong> Ölçümlerin (varsa) Sağlık Bakanlığı altyapılarına iletimi <u>ventilatör cihazı</u> ve/veya yetkili sistemler tarafından yapılır; <u>uygulama veri göndermez</u>.</li>
+          <li><strong>Bağlantı kapsamı:</strong> Uygulama konum izni talep etmez; bakanlık/üçüncü taraf sunucularla entegrasyon içermez.</li>
+          <li><strong>Üçüncü taraf SDK yok:</strong> Reklam, analitik veya çökme raporlama SDK’sı bulunmaz.</li>
+        </ul>
+      </section>
+
+      <section id="tr-4">
+        <h2>4) Toplanmayan/Kullanılmayan Veri Kategorileri</h2>
+        <div class="grid grid-2">
+          <ul>
+            <li>Kimlik ve iletişim bilgileri (ad, e-posta, telefon vb.)</li>
+            <li>Konum verileri (hassas/ yaklaşık)</li>
+            <li>Cihaz tanımlayıcıları (reklam kimliği vb.)</li>
+          </ul>
+          <ul>
+            <li>Finansal/ödeme verileri</li>
+            <li>Pazarlama/analitik amaçlı kullanım verisi</li>
+            <li>Davranışsal profilleme / hedefli reklam</li>
+          </ul>
+        </div>
+        <p class="muted">Yasal bir talep veya güvenlik gerekçesi oluşmadıkça paylaşım yapılmaz.</p>
+      </section>
+
+      <section id="tr-5">
+        <h2>5) Yalnızca Ekranda Görüntülenen Ölçümler</h2>
+        <p>Uygulama aşağıdaki tür ölçümleri <em>geçici olarak</em> işleyebilir ve gösterebilir:</p>
+        <ul>
+          <li>Ventilatör değerleri (basınç, akış, hacim vb.)</li>
+          <li>Alarm/uyarı eşikleri ve durumları</li>
+          <li>Cihaza ait seri/ürün bilgileri (görüntüleme bağlamında)</li>
+        </ul>
+        <div class="callout warn"><strong>Önemli:</strong> Bu veriler uygulama tarafından <u>kalıcı olarak saklanmaz</u>, <u>sunuculara gönderilmez</u> ve üçüncü taraflarla paylaşılmaz.</div>
+      </section>
+
+      <section id="tr-6">
+        <h2>6) İşleme Amaçları ve Hukuki Dayanaklar</h2>
+        <table>
+          <thead><tr><th>Amaç</th><th>Detay</th><th>Hukuki Dayanak (KVKK/GDPR)</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Ölçümlerin gösterimi</td>
+              <td>Hasta güvenliği ve kullanım kolaylığı için cihaz verilerinin görselleştirilmesi</td>
+              <td>Sözleşmenin ifası / meşru menfaat; sağlık verisi söz konusu ise kamu sağlığı/sağlık hizmeti istisnaları</td>
+            </tr>
+            <tr>
+              <td>Uygulama ayarları</td>
+              <td>Kullanıcı tercihlerinin yerelde tutulması (ör. eşik, görünüm)</td>
+              <td>Meşru menfaat</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Reklam, analitik, çerez tabanlı izleme veya profilleme yapılmaz.</p>
+      </section>
+
+      <section id="tr-7">
+        <h2>7) Paylaşım, Aktarım ve Alıcılar</h2>
+        <ul>
+          <li><strong>Rutin paylaşım yoktur.</strong> Uygulama verileri sunucuya göndermez.</li>
+          <li><strong>Yasal zorunluluklar:</strong> Mahkeme kararı veya idari talepler gibi durumlarda, talep ile sınırlı ve mümkünse kimlikten arındırarak paylaşım yapılabilir.</li>
+          <li><strong>Uluslararası aktarım:</strong> Uygulama tarafında uluslararası aktarım bulunmaz (veri cihazda kalır).</li>
+        </ul>
+      </section>
+
+      <section id="tr-8">
+        <h2>8) Güvenlik Önlemleri</h2>
+        <ul>
+          <li>Asgari veri ilkesi ve yerel işleme</li>
+          <li>Mobil işletim sistemi düzeyinde izin/izolasyon</li>
+          <li>Yetkisiz erişime karşı cihaz güvenlik özelliklerinden yararlanma</li>
+          <li>Olay müdahale süreci (şüpheli durumlarda <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a>)</li>
+        </ul>
+      </section>
+
+      <section id="tr-9">
+        <h2>9) Saklama (Retansiyon) Politikası</h2>
+        <p>Uygulama kalıcı saklama yapmaz. Ölçümler bağlantı süresince geçici bellekte işlenir; bağlantı sona erdiğinde tutulmaz.</p>
+      </section>
+
+      <section id="tr-10">
+        <h2>10) Haklarınız ve Başvuru Mekanizması (KVKK/GDPR)</h2>
+        <p>Kişisel veri işlemememize rağmen, KVKK/GDPR kapsamındaki bilgi alma, erişim, düzeltme, silme, kısıtlama ve itiraz haklarınızı <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a> üzerinden kullanabilirsiniz. Başvurulara yasal sürelerde yanıt verilir.</p>
+      </section>
+
+      <section id="tr-11">
+        <h2>11) Çocuklara İlişkin Hükümler</h2>
+        <p>Uygulama 13 yaş altına yönelik değildir; çocuklardan kişisel veri bilerek toplamayız. Ev tipi ventilatör ölçümleri yalnızca ekranda görüntülenir; uygulama bu verileri toplamaz veya iletmez.</p>
+      </section>
+
+      <section id="tr-12">
+        <h2>12) Çerezler, SDK’lar ve Benzeri Teknolojiler</h2>
+        <p>Uygulamada reklam/analitik/çökme SDK’sı yoktur; çerez temelli izleme yapılmaz.</p>
+      </section>
+
+      <section id="tr-13">
+        <h2>13) Değişiklikler ve Bildirimler</h2>
+        <p>Bu bildirim zamanla güncellenebilir. Güncellemeler bu sayfada yayımlanır ve “Son güncelleme” tarihi revize edilir.</p>
+      </section>
+
+      <section id="tr-14">
+        <h2>14) İletişim Bilgileri</h2>
+        <p><strong>Biosys Biyomedikal Mühendislik A.Ş.</strong><br>
+           Üniversiteler Mahallesi İhsan Doğramacı Bulvarı No:23/C, ODTÜ Teknokent, Çankaya/ANKARA, TÜRKİYE<br>
+           E-posta: <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a></p>
+      </section>
+
+      <section id="tr-a">
+        <h2>EK-A: Google Play “Data Safety” Eşlemesi</h2>
+        <table>
+          <thead><tr><th>Kategori</th><th>Toplama</th><th>Paylaşım</th><th>İşleme amacı</th><th>Açıklama</th></tr></thead>
+          <tbody>
+            <tr><td>Kişisel bilgiler</td><td>Toplanmıyor</td><td>Yok</td><td>—</td><td>Kimlik/iletişim alınmaz</td></tr>
+            <tr><td>Konum</td><td>Toplanmıyor</td><td>Yok</td><td>—</td><td>GPS izni yok</td></tr>
+            <tr><td>Sağlık verileri</td><td><strong>Toplanmıyor (ekranda görüntüleme)</strong></td><td>Yok</td><td>—</td><td>Veri cihazda kalır</td></tr>
+            <tr><td>Uygulama etkinliği</td><td>Toplanmıyor</td><td>Yok</td><td>—</td><td>Analitik/Crash SDK yok</td></tr>
+            <tr><td>Cihaz tanımlayıcıları</td><td>Toplanmıyor</td><td>Yok</td><td>—</td><td>Reklam kimliği yok</td></tr>
+            <tr><td>Finansal bilgiler</td><td>Toplanmıyor</td><td>Yok</td><td>—</td><td>Ödeme işlemi yok</td></tr>
+          </tbody>
+        </table>
+        <p class="muted">Play Console beyanlarında “No data collected” ve “Health data only displayed on-device; not transmitted by the app” ifadeleri kullanılabilir.</p>
+      </section>
+
+      <section id="tr-b">
+        <h2>EK-B: Kayıt Tutma (ROPA) Özeti</h2>
+        <table>
+          <thead><tr><th>Faaliyet</th><th>Veri kategorisi</th><th>Alıcı</th><th>Aktarım</th><th>Saklama</th><th>Kontroller</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Ventilatör ölçümlerinin gösterimi</td>
+              <td>Sağlıkla ilişkili ölçümler (yalnızca görselleştirme)</td>
+              <td>— (rutin paylaşım yok)</td>
+              <td>— (uluslararası aktarım yok)</td>
+              <td>Kalıcı saklama yok, geçici bellek</td>
+              <td>OS izinleri, asgari veri, yerel işleme</td>
+            </tr>
+            <tr>
+              <td>Kullanıcı tercihleri (ayarlar)</td>
+              <td>Tercihler (eşik/görünüm)</td>
+              <td>—</td>
+              <td>—</td>
+              <td>Cihazda yerel</td>
+              <td>Uygulama içi kontroller</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <!-- ============ ENGLISH FULL TEXT ============ -->
+    <section id="en">
+      <div class="lang-banner">— English Full Text —</div>
+      <nav class="toc">
+        <strong>Table of Contents</strong>
+        <ol>
+          <li><a href="#en-1">Who We Are & Scope</a></li>
+          <li><a href="#en-2">Definitions</a></li>
+          <li><a href="#en-3">App Role & Architecture</a></li>
+          <li><a href="#en-4">Categories Not Collected/Used</a></li>
+          <li><a href="#en-5">Measurements Displayed On-Device Only</a></li>
+          <li><a href="#en-6">Purposes & Legal Bases</a></li>
+          <li><a href="#en-7">Sharing, Transfers & Recipients</a></li>
+          <li><a href="#en-8">Security Measures</a></li>
+          <li><a href="#en-9">Retention Policy</a></li>
+          <li><a href="#en-10">Your Rights & How to Exercise Them (GDPR/KVKK)</a></li>
+          <li><a href="#en-11">Children</a></li>
+          <li><a href="#en-12">Cookies, SDKs and Similar Technologies</a></li>
+          <li><a href="#en-13">Changes & Notices</a></li>
+          <li><a href="#en-14">Contact</a></li>
+          <li><a href="#en-a">ANNEX A: Google Play “Data Safety” Mapping</a></li>
+          <li><a href="#en-b">ANNEX B: ROPA Summary</a></li>
+        </ol>
+      </nav>
+
+      <section id="en-1">
+        <h2>1) Who We Are & Scope</h2>
+        <p><strong>Controller:</strong> Biosys Biyomedikal Mühendislik A.Ş. (“Biosys”)</p>
+        <p><strong>Address:</strong> Üniversiteler Mahallesi İhsan Doğramacı Bulvarı No:23/C, ODTÜ Teknokent, Çankaya/ANKARA, Türkiye</p>
+        <p><strong>Email:</strong> <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a></p>
+        <p>This notice applies to the Bio2xy-Monitor mobile application, support pages and customer communication channels.</p>
+        <div class="callout"><strong>Summary:</strong> The app <u>displays</u> measurements from a home ventilator device <u>on-device only</u>. The app does <u>not collect</u>, <u>persistently store</u>, <u>transmit</u> or <u>share</u> personal data in its own right.</div>
+      </section>
+
+      <section id="en-2">
+        <h2>2) Definitions</h2>
+        <p><strong>Personal Data:</strong> Information that identifies or can make a person identifiable (GDPR/KVKK).<br>
+           <strong>Health Data:</strong> Special-category personal data relating to a person’s health.<br>
+           <strong>Processing:</strong> Any operation on personal data (collection, storage, transfer, etc.).</p>
+      </section>
+
+      <section id="en-3">
+        <h2>3) App Role & Architecture</h2>
+        <ul>
+          <li><strong>Local processing:</strong> Measurements from the ventilator are processed <em>transiently</em> on the device and displayed on screen.</li>
+          <li><strong>Data flow:</strong> Any transmission (if applicable) to Ministry of Health infrastructures is performed by the <u>ventilator device</u> and/or authorized systems; <u>the app does not send data</u>.</li>
+          <li><strong>Permissions:</strong> The app does not request location; there is no integration with ministry/third‑party servers.</li>
+          <li><strong>No third‑party SDKs:</strong> No ads, analytics or crash-reporting SDKs.</li>
+        </ul>
+      </section>
+
+      <section id="en-4">
+        <h2>4) Categories Not Collected/Used</h2>
+        <div class="grid grid-2">
+          <ul>
+            <li>Identity and contact (name, email, phone, etc.)</li>
+            <li>Location data (precise/approximate)</li>
+            <li>Device identifiers (advertising ID, etc.)</li>
+          </ul>
+          <ul>
+            <li>Financial/payment data</li>
+            <li>Usage data for marketing/analytics</li>
+            <li>Profiling / targeted advertising</li>
+          </ul>
+        </div>
+        <p class="muted">No sharing unless required by law or security necessity.</p>
+      </section>
+
+      <section id="en-5">
+        <h2>5) Measurements Displayed On-Device Only</h2>
+        <p>The app may <em>transiently</em> process and display:</p>
+        <ul>
+          <li>Ventilator values (pressure, flow, volume, etc.)</li>
+          <li>Alarm/threshold states</li>
+          <li>Device serial/product information (for display context)</li>
+        </ul>
+        <div class="callout warn"><strong>Important:</strong> These data are <u>not persistently stored</u>, <u>not transmitted to servers</u>, and <u>not shared</u> by the app.</div>
+      </section>
+
+      <section id="en-6">
+        <h2>6) Purposes & Legal Bases</h2>
+        <table>
+          <thead><tr><th>Purpose</th><th>Details</th><th>Legal Basis (GDPR/KVKK)</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Display of measurements</td>
+              <td>Visualization for patient safety and usability</td>
+              <td>Performance of a contract / legitimate interests; for health data, public health/healthcare provision exemptions where applicable</td>
+            </tr>
+            <tr>
+              <td>App settings</td>
+              <td>Locally retained preferences (e.g., thresholds, view)</td>
+              <td>Legitimate interests</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>No advertising, analytics, cookie‑based tracking or profiling.</p>
+      </section>
+
+      <section id="en-7">
+        <h2>7) Sharing, Transfers & Recipients</h2>
+        <ul>
+          <li><strong>No routine sharing.</strong> The app does not send data to servers.</li>
+          <li><strong>Legal obligations:</strong> In case of a court/administrative request, limited and, where possible, de‑identified sharing may occur.</li>
+          <li><strong>International transfers:</strong> None on the app side (data remain on the device).</li>
+        </ul>
+      </section>
+
+      <section id="en-8">
+        <h2>8) Security Measures</h2>
+        <ul>
+          <li>Data minimization and on‑device processing</li>
+          <li>Mobile OS‑level permissions/isolation</li>
+          <li>Use of device security features against unauthorized access</li>
+          <li>Incident response channel (<a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a>)</li>
+        </ul>
+      </section>
+
+      <section id="en-9">
+        <h2>9) Retention Policy</h2>
+        <p>No persistent storage by the app. Measurements are processed in volatile memory during connection; not retained afterwards.</p>
+      </section>
+
+      <section id="en-10">
+        <h2>10) Your Rights & How to Exercise Them (GDPR/KVKK)</h2>
+        <p>Although the app does not process personal data in its own right, you can exercise GDPR/KVKK rights (information, access, rectification, erasure, restriction, objection) via <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a>. Requests are answered within statutory time limits.</p>
+      </section>
+
+      <section id="en-11">
+        <h2>11) Children</h2>
+        <p>The app is not directed to children under 13; we do not knowingly collect personal data from children. Home ventilator measurements are only shown on‑device; the app does not collect or transmit them.</p>
+      </section>
+
+      <section id="en-12">
+        <h2>12) Cookies, SDKs and Similar Technologies</h2>
+        <p>No ads/analytics/crash SDKs; no cookie‑based tracking.</p>
+      </section>
+
+      <section id="en-13">
+        <h2>13) Changes & Notices</h2>
+        <p>This notice may be updated. Updates will be posted here with a revised “Last updated” date.</p>
+      </section>
+
+      <section id="en-14">
+        <h2>14) Contact</h2>
+        <p><strong>Biosys Biyomedikal Mühendislik A.Ş.</strong><br>
+           Üniversiteler Mahallesi İhsan Doğramacı Bulvarı No:23/C, ODTÜ Teknokent, Çankaya/ANKARA, Türkiye<br>
+           Email: <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a></p>
+      </section>
+
+      <section id="en-a">
+        <h2>ANNEX A: Google Play “Data Safety” Mapping</h2>
+        <table>
+          <thead><tr><th>Category</th><th>Collection</th><th>Sharing</th><th>Purpose</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Personal info</td><td>Not collected</td><td>None</td><td>—</td><td>No identity/contact data</td></tr>
+            <tr><td>Location</td><td>Not collected</td><td>None</td><td>—</td><td>No GPS permission</td></tr>
+            <tr><td>Health data</td><td><strong>Not collected (display‑only)</strong></td><td>None</td><td>—</td><td>On‑device only</td></tr>
+            <tr><td>App activity</td><td>Not collected</td><td>None</td><td>—</td><td>No analytics/crash SDK</td></tr>
+            <tr><td>Device IDs</td><td>Not collected</td><td>None</td><td>—</td><td>No advertising ID</td></tr>
+            <tr><td>Financial</td><td>Not collected</td><td>None</td><td>—</td><td>No payments</td></tr>
+          </tbody>
+        </table>
+        <p class="muted">Play Console declaration: “No data collected” and “Health data only displayed on‑device; not transmitted by the app.”</p>
+      </section>
+
+      <section id="en-b">
+        <h2>ANNEX B: ROPA Summary</h2>
+        <table>
+          <thead><tr><th>Activity</th><th>Data Category</th><th>Recipient</th><th>Transfer</th><th>Retention</th><th>Controls</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Display of ventilator measurements</td>
+              <td>Health‑related measurements (display only)</td>
+              <td>— (no routine sharing)</td>
+              <td>— (no international transfers)</td>
+              <td>No persistent storage</td>
+              <td>OS controls, data minimization, on‑device processing</td>
+            </tr>
+            <tr>
+              <td>User preferences (settings)</td>
+              <td>Thresholds/view preferences</td>
+              <td>—</td>
+              <td>—</td>
+              <td>Local on device</td>
+              <td>In‑app controls</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <footer>© 2025 Biosys Biyomedikal Mühendislik A.Ş. • Bu sayfa / This page is provided for information.</footer>
   </div>
-
-  <!-- =========================================================
-       TÜRKÇE
-  ========================================================== -->
-  <h1 id="tr">Gizlilik Politikası</h1>
-  <p class="muted">Son güncelleme: <strong>2025-10-20</strong> · Sürüm: 1.0</p>
-
-  <div class="card">
-    <p><strong>Veri Sorumlusu:</strong> Biosys Biyomedikal Mühendislik A.Ş. (“<em>Biosys</em>”)</p>
-    <p><strong>Uygulama:</strong> <em>Bio2xy-Monitor</em></p>
-    <p><strong>Adres:</strong> Üniversiteler Mah. İhsan Doğramacı Blv. No:23/C, ODTÜ Teknokent, Çankaya/Ankara, Türkiye</p>
-    <p><strong>İletişim:</strong> <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a></p>
-  </div>
-
-  <h2>1) Amaç ve Kapsam</h2>
-  <p>Bu metin, <em>Bio2xy-Monitor</em> mobil uygulaması (Uygulama) kapsamında kişisel verilerin nasıl ele alındığına ilişkin şeffaflığı sağlamak amacıyla hazırlanmıştır. Uygulama, ev tipi ventilatör cihazının ürettiği hasta ölçümlerini <strong>yalnızca ekranda görüntülemek</strong> üzere tasarlanmıştır. Uygulama kendi adına <strong>kişisel veri toplamaz, işlemez, kalıcı olarak saklamaz veya üçüncü taraflarla paylaşmaz</strong>.</p>
-
-  <h2>2) Rollerin Tanımı</h2>
-  <ul>
-    <li><strong>Biosys (Veri Sorumlusu):</strong> Uygulamanın geliştiricisidir. Uygulama özelinde kişisel veri işleme faaliyeti yürütmemektedir.</li>
-    <li><strong>Ventilatör Cihazı/Yetkili Altyapılar:</strong> Ölçümleri üreten ve (varsa) ilgili sağlık otoritelerine iletimini yapan sistemlerdir. Bu iletim Uygulama dışında gerçekleşir.</li>
-  </ul>
-
-  <h2>3) Mimari ve Veri Akışı</h2>
-  <ul>
-    <li>Uygulama, ventilatörden gelen ölçümleri <strong>anlık</strong> olarak ekranda gösterir.</li>
-    <li>Verilerin (uygulanabilir ise) Sağlık Bakanlığı veya ilgili sağlık bilgi sistemlerine iletimi <strong>ventilatör cihazı</strong> ve/veya yetkili altyapılar üzerinden yapılır.</li>
-    <li>Uygulama <strong>sunucuya veri göndermez</strong>, <strong>kalıcı saklama yapmaz</strong>, arka uç (backend) tutmaz.</li>
-  </ul>
-
-  <h2>4) Veri Kategorileri Matrisi</h2>
-  <table>
-    <thead>
-      <tr><th>Veri Kategorisi</th><th>Uygulama Topluyor mu?</th><th>Açıklama</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Kimlik / İletişim</td><td><strong>Hayır</strong></td><td>Ad, e-posta, telefon, hesap bilgisi vb. toplanmaz.</td></tr>
-      <tr><td>Konum</td><td><strong>Hayır</strong></td><td>GPS/ağ tabanlı konum toplanmaz.</td></tr>
-      <tr><td>Cihaz Tanımlayıcıları / Çerezler / Reklam Kimliği</td><td><strong>Hayır</strong></td><td>İzleme veya reklam amaçlı kimlikler kullanılmaz.</td></tr>
-      <tr><td>Sağlık Verileri</td><td><strong>Hayır</strong> (yalnızca ekran)</td><td>Ventilatör ölçümleri sadece görüntülenir; Uygulama bunları işlemez/saklamaz/aktarmaz.</td></tr>
-      <tr><td>Analitik / Çökme Günlükleri</td><td><strong>Hayır</strong></td><td>Üçüncü taraf SDK (analitik/crash) bulunmaz.</td></tr>
-      <tr><td>Pazarlama</td><td><strong>Hayır</strong></td><td>Pazarlama/kişiselleştirme yapılmaz.</td></tr>
-    </tbody>
-  </table>
-
-  <h2>5) Hukuki Dayanak ve Mevzuat</h2>
-  <p>Uygulama kişisel veri <strong>işlemediğinden</strong> KVKK ve/veya GDPR kapsamında hukuki dayanak gerektiren bir işlem yapılmamaktadır. Gelecekte kişisel veri işlenmesini gerektiren bir özellik eklenirse, ilgili hukuki sebep (KVKK m.5/6, GDPR m.6/9) açıkça belirtilerek aydınlatma metinleri ve bu politika <strong>güncellenecektir</strong>.</p>
-
-  <h2>6) Güvenlik</h2>
-  <ul>
-    <li>Uygulama verileri yalnızca <strong>geçici bellek</strong>te işler ve ekranda gösterir.</li>
-    <li>Ağ iletimi söz konusu olduğunda (cihaz/altyapı kanalı), güvenlik kontrolleri <strong>cihaz üreticisi/ilgili altyapı</strong> tarafından sağlanır.</li>
-    <li>En az veri prensibi, erişim kontrolleri ve güvenli yazılım geliştirme uygulamaları benimsenmiştir.</li>
-  </ul>
-
-  <h2>7) Saklama Süresi</h2>
-  <p>Uygulama tarafında <strong>kalıcı saklama yoktur</strong>. Gösterim amaçlı veriler oturum süresiyle sınırlı kalır.</p>
-
-  <h2>8) Alıcılar ve Aktarımlar</h2>
-  <p>Uygulama verileri herhangi bir üçüncü tarafa <strong>aktarmaz</strong>. Cihaz/altyapı kaynaklı zorunlu iletimler (ör. Sağlık Bakanlığı sistemleri) Uygulama dışında gerçekleşir. Uluslararası aktarım Uygulama kapsamında <strong>yoktur</strong>.</p>
-
-  <h2>9) Çocukların Gizliliği</h2>
-  <p>Uygulama <strong>13 yaş altına yönelik değildir</strong> ve çocuklardan kişisel veri bilerek toplanmaz.</p>
-
-  <h2>10) Haklarınız (KVKK/GDPR)</h2>
-  <p>Uygulama kişisel veri işlemediğinden, veri sahibi başvurularına konu olabilecek bir kayıt <em>genellikle</em> bulunmamaktadır. Yine de KVKK ve GDPR çerçevesinde; bilgi edinme, erişim, düzeltme, silme, işlemeyi kısıtlama, itiraz, veri taşınabilirliği talepleriniz için <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a> adresine başvurabilirsiniz.</p>
-
-  <h2>11) Çerezler, Pazarlama ve Profil Oluşturma</h2>
-  <p>Uygulama içinde çerez, pazarlama amaçlı izleme, push ile pazarlama veya profil çıkarımı <strong>yapılmamaktadır</strong>.</p>
-
-  <h2>12) Google Play “Data Safety” Eşlemesi</h2>
-  <ul>
-    <li><strong>Data collected?</strong> No data collected</li>
-    <li><strong>Data shared?</strong> No</li>
-    <li><strong>Location / Ads / Analytics / Device IDs:</strong> No</li>
-    <li><strong>Encryption / Deletion:</strong> App tarafında işleme/saklama yok → “Not applicable”</li>
-  </ul>
-
-  <h2>13) Değişiklikler</h2>
-  <p>Bu politika zaman zaman güncellenebilir. Değişiklikler bu sayfada yayımlanır ve “Son güncelleme” tarihi revize edilir.</p>
-
-  <hr>
-
-  <!-- =========================================================
-       ENGLISH
-  ========================================================== -->
-  <h1 id="en">Privacy Policy</h1>
-  <p class="muted">Last updated: <strong>2025-10-20</strong> · Version: 1.0</p>
-
-  <div class="card">
-    <p><strong>Controller:</strong> Biosys Biyomedikal Mühendislik A.Ş. (“<em>Biosys</em>”)</p>
-    <p><strong>Application:</strong> <em>Bio2xy-Monitor</em></p>
-    <p><strong>Address:</strong> Üniversiteler Mah. İhsan Doğramacı Blv. No:23/C, ODTÜ Teknokent, Çankaya/Ankara, Türkiye</p>
-    <p><strong>Contact:</strong> <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a></p>
-  </div>
-
-  <h2>1) Purpose & Scope</h2>
-  <p>This notice explains how data are handled within the <em>Bio2xy-Monitor</em> mobile app. The App is designed solely to <strong>display</strong> measurements generated by a home ventilator. The App itself <strong>does not collect, process, persistently store, or share</strong> personal data.</p>
-
-  <h2>2) Roles</h2>
-  <ul>
-    <li><strong>Biosys (Controller):</strong> Developer of the App. No personal-data processing is performed by the App.</li>
-    <li><strong>Ventilator/Authorized Infrastructures:</strong> Generate measurements and (where applicable) transmit them to competent health systems. Such transmission occurs <strong>outside</strong> the App.</li>
-  </ul>
-
-  <h2>3) Architecture & Data Flow</h2>
-  <ul>
-    <li>The App displays ventilator-generated measurements in real time.</li>
-    <li>Any transmission to health authorities/systems (where applicable) is performed by the <strong>device</strong> and/or authorized infrastructures.</li>
-    <li>The App <strong>does not transmit</strong> data to servers, keeps <strong>no backend</strong>, and performs <strong>no persistent storage</strong>.</li>
-  </ul>
-
-  <h2>4) Data Categories Matrix</h2>
-  <table>
-    <thead>
-      <tr><th>Category</th><th>Collected by the App?</th><th>Notes</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Identity / Contact</td><td><strong>No</strong></td><td>No account or contact details collected.</td></tr>
-      <tr><td>Location</td><td><strong>No</strong></td><td>No GPS or network-based location.</td></tr>
-      <tr><td>Device IDs / Cookies / Ad IDs</td><td><strong>No</strong></td><td>No tracking or advertising identifiers.</td></tr>
-      <tr><td>Health Data</td><td><strong>No</strong> (display only)</td><td>Ventilator measurements are only displayed; not processed/stored/transferred by the App.</td></tr>
-      <tr><td>Analytics / Crash Logs</td><td><strong>No</strong></td><td>No third-party SDKs (analytics/crash) are embedded.</td></tr>
-      <tr><td>Marketing</td><td><strong>No</strong></td><td>No marketing or personalization.</td></tr>
-    </tbody>
-  </table>
-
-  <h2>5) Legal Basis</h2>
-  <p>The App does <strong>not</strong> process personal data. If a future feature requires processing, the appropriate legal basis (e.g., under GDPR/KVKK) will be identified and this Policy will be updated together with relevant notices.</p>
-
-  <h2>6) Security</h2>
-  <ul>
-    <li>Data are handled <strong>transiently</strong> in memory for on-screen display.</li>
-    <li>Where network transmission occurs (via device/infrastructure), it is covered by the security controls of the <strong>device manufacturer/relevant infrastructures</strong>.</li>
-    <li>We follow data-minimization and secure development practices.</li>
-  </ul>
-
-  <h2>7) Retention</h2>
-  <p><strong>No persistent retention</strong> by the App. Data used for display are limited to the active session.</p>
-
-  <h2>8) Recipients & Transfers</h2>
-  <p>The App does <strong>not</strong> disclose data to third parties. Mandatory transmissions by device/infrastructure (e.g., to a Ministry of Health system) occur outside the App. No international transfers by the App.</p>
-
-  <h2>9) Children’s Privacy</h2>
-  <p>The App is <strong>not directed to children under 13</strong>; no data are knowingly collected from children.</p>
-
-  <h2>10) Your Rights (GDPR/KVKK)</h2>
-  <p>Although the App does not process personal data, you may contact us for privacy inquiries or to exercise rights such as access, rectification, erasure, restriction, objection, or portability, where applicable: <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a>.</p>
-
-  <h2>11) Cookies, Marketing & Profiling</h2>
-  <p>No cookies within the App, no marketing communications, and no profiling/personalization.</p>
-
-  <h2>12) Google Play “Data Safety” Mapping</h2>
-  <ul>
-    <li><strong>Data collected?</strong> No data collected</li>
-    <li><strong>Data shared?</strong> No</li>
-    <li><strong>Location / Ads / Analytics / Device IDs:</strong> No</li>
-    <li><strong>Encryption / Deletion:</strong> Not applicable (no in-App processing/retention)</li>
-  </ul>
-
-  <h2>13) Changes</h2>
-  <p>We may update this Policy. Updates will be posted on this page with a revised “Last updated” date.</p>
-
-  <footer>© Biosys Biyomedikal Mühendislik A.Ş.</footer>
 </body>
 </html>

@@ -5,69 +5,133 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Biosys Biyomedikal Mühendislik A.Ş. | Gizlilik Politikası / Privacy Policy</title>
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.6}
-    h1,h2{line-height:1.2} .muted{color:#555} hr{margin:32px 0}
-    a{color:inherit}
+    :root{--fg:#1f2937;--muted:#6b7280;--line:#e5e7eb}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--fg);max-width:960px;margin:40px auto;padding:0 18px;line-height:1.65}
+    h1,h2{line-height:1.25;margin:0 0 12px}
+    h1{font-size:1.75rem} h2{font-size:1.25rem;margin-top:28px}
+    p,ul{margin:10px 0}
+    .muted{color:var(--muted)}
+    .card{border:1px solid var(--line);border-radius:12px;padding:16px;margin:18px 0;background:#fff}
+    hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+    .langswitch a{margin-right:12px;text-decoration:none}
+    footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
   </style>
 </head>
 <body>
-  <h1>Gizlilik Politikası</h1>
+  <div class="langswitch muted">
+    <a href="#tr">Türkçe</a> · <a href="#en">English</a>
+  </div>
+
+  <!-- =========================================
+       TÜRKÇE
+  ========================================== -->
+  <h1 id="tr">Gizlilik Politikası</h1>
   <p class="muted">Son güncelleme: <strong>2025-10-20</strong></p>
 
-  <p><strong>Sorumlu Kuruluş:</strong> Biosys Biyomedikal Mühendislik A.Ş. (“Biosys”)</p>
-  <p><strong>İletişim:</strong> <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a><br>
-     <strong>Adres:</strong> Üniversiteler Mahallesi İhsan Doğramacı Bulvarı No:23/C ODTÜ Teknokent Çankaya/ANKARA, TÜRKİYE</p>
+  <div class="card">
+    <p><strong>Sorumlu Kuruluş:</strong> Biosys Biyomedikal Mühendislik A.Ş. (“<em>Biosys</em>”)</p>
+    <p><strong>Uygulama:</strong> <em>Bio2xy-Monitor</em></p>
+    <p><strong>İletişim:</strong> <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a></p>
+    <p><strong>Adres:</strong> Üniversiteler Mahallesi İhsan Doğramacı Bulvarı No:23/C, ODTÜ Teknokent, Çankaya/Ankara, Türkiye</p>
+  </div>
 
-  <h2>Uygulamanın Rolü</h2>
-  <p><strong>Bio2xy-Monitor</strong>, ev tipi ventilatöre bağlı hastaya ait, ventilatör cihazının ürettiği ölçümleri <strong>ekranda görüntülemek</strong> amacıyla tasarlanmıştır. Uygulama bu verileri kendi adına <strong>toplamaz, işlemez, kalıcı olarak saklamaz veya üçüncü taraflarla paylaşmaz</strong>.</p>
+  <h2>1) Kapsam ve Genel İlke</h2>
+  <p>Bu politika, <em>Bio2xy-Monitor</em> mobil uygulaması kapsamında gerçekleştirilen veri işlemlerine ilişkin şeffaflığı sağlamayı amaçlar. Uygulama, ev tipi ventilatöre bağlı hastaya ait ölçümleri <strong>yalnızca ekranda görüntülemek</strong> üzere tasarlanmıştır. Bu nedenle uygulama kendi adına <strong>kişisel veri toplamaz, işlemez, kalıcı olarak saklamaz veya üçüncü taraflarla paylaşmaz</strong>.</p>
 
-  <h2>Toplanan Veriler</h2>
-  <p><strong>Kişisel veri toplamıyoruz.</strong> Uygulama; kimlik, iletişim, konum, cihaz kimlikleri, çerezler/reklam tanımlayıcıları gibi kişisel verileri toplamaz veya paylaşmaz. Üçüncü taraf SDK (reklam/analitik/çökme raporu vb.) <strong>bulunmamaktadır</strong>.</p>
+  <h2>2) Tanımlar</h2>
+  <ul>
+    <li><strong>Uygulama verileri:</strong> Ventilatör cihazı tarafından üretilen ve cihaza bağlı hasta ölçümleri.</li>
+    <li><strong>İşleme:</strong> Kişisel veriler üzerinde yapılan her türlü işlem (toplama, kaydetme, depolama, aktarma vb.).</li>
+  </ul>
 
-  <h2>Sağlık Verilerinin Akışı</h2>
-  <p>Ventilatörün ürettiği hasta ölçümleri uygulama tarafından yalnızca <em>görüntülenir</em>. Bu verilerin (varsa) ilgili otoriteye/sağlık bilgi sistemlerine iletimi <strong>ventilatör cihazı</strong> ve/veya yetkili altyapılar tarafından gerçekleştirilir. <strong>Bio2xy-Monitor uygulaması veri gönderimi yapmaz</strong> ve bu verileri sunuculara iletmez.</p>
+  <h2>3) Veri Akışı ve Mimari</h2>
+  <ul>
+    <li>Uygulama, ventilatör cihazının ürettiği ölçümleri <strong>anlık olarak görüntüler</strong>.</li>
+    <li>Bu ölçümlerin (uygulanabilir ise) ilgili sağlık bilgi sistemlerine/otoritelere iletimi, <strong>ventilatör cihazı</strong> ve/veya yetkili altyapılar tarafından gerçekleştirilir.</li>
+    <li><strong>Bio2xy-Monitor</strong> uygulaması <strong>sunucuya veri göndermez</strong> ve kendi sunucularında veri tutmaz.</li>
+  </ul>
 
-  <h2>Güvenlik ve Saklama</h2>
-  <p>Uygulama tarafında kalıcı saklama yoktur; veriler yalnızca anlık görüntüleme amacıyla işlenir. Veri iletimi (varsa) cihaz ve ilgili altyapıların güvenlik önlemleri kapsamındadır.</p>
+  <h2>4) Toplanmayan Veri Kategorileri</h2>
+  <p>Aşağıdaki veri kategorileri uygulama tarafından <strong>toplanmaz ve paylaşılmaz</strong>:</p>
+  <ul>
+    <li>Kimlik ve iletişim bilgileri, kullanıcı hesabı verileri</li>
+    <li>Konum verileri (GPS veya ağ tabanlı)</li>
+    <li>Cihaz tanımlayıcıları, reklam kimlikleri, çerezler ve izleme verileri</li>
+    <li>Hedeflenmiş reklam/analitik/çökme raporu verileri</li>
+  </ul>
+  <p>Ayrıca uygulama içinde <strong>üçüncü taraf SDK’lar</strong> (reklam, analitik, çökme izleme vb.) <strong>bulunmamaktadır</strong>.</p>
 
-  <h2>Kullanıcı Hakları</h2>
-  <p>Kişisel veri işlemediğimiz için genel olarak başvuruya konu veri bulunmamaktadır. Yine de gizlilikle ilgili sorularınız için <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a> adresinden bize ulaşabilirsiniz.</p>
+  <h2>5) Güvenlik</h2>
+  <p>Uygulama, cihazdan aldığı verileri yalnızca geçici olarak bellekte işler ve ekranda gösterir. Kalıcı saklama yapmadığından, veri sızıntısı riskini azaltmak amacıyla <em>en az veri</em> ilkesine uygun çalışır. Veri iletimi söz konusu olduğunda (ör. cihaz/altyapı kanalı), bu iletim <strong>cihaz üreticisinin/ilgili altyapının</strong> güvenlik önlemleri kapsamındadır.</p>
 
-  <h2>Çocuklar</h2>
-  <p>Uygulama 13 yaş altına yönelik değildir ve çocuklardan kişisel veri bilerek toplamıyoruz.</p>
+  <h2>6) Saklama</h2>
+  <p>Uygulama tarafında kalıcı saklama <strong>yapılmamaktadır</strong>. Ekranda gösterim amacıyla işlenen veriler, oturumla sınırlı olarak geçici bellekte bulunabilir.</p>
 
-  <h2>Değişiklikler</h2>
-  <p>Bu politika güncellenebilir. Değişiklikler bu sayfada yayımlanır ve “Son güncelleme” tarihi revize edilir.</p>
+  <h2>7) Çocukların Gizliliği</h2>
+  <p>Uygulama <strong>13 yaş altına yönelik değildir</strong>. Çocuklara ait kişisel veriler bilerek toplanmaz.</p>
+
+  <h2>8) Kullanıcı Hakları ve İletişim</h2>
+  <p>Biosys, bu uygulama özelinde kişisel veri işlemediğinden, veri sahibi taleplerine konu olabilecek bir kayıt <em>genellikle</em> bulunmamaktadır. Yine de gizlilikle ilgili soru ve talepleriniz için <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a> adresine başvurabilirsiniz.</p>
+
+  <h2>9) Politika Değişiklikleri</h2>
+  <p>Bu politika güncellenebilir. Güncellemeler bu sayfada yayımlanır ve “Son güncelleme” tarihi revize edilir. Uygulamada kişisel veri işlenmesini gerektiren yeni bir özellik eklenirse, Google Play <em>Data Safety</em> beyanları ve bu politika uygun şekilde güncellenecektir.</p>
 
   <hr>
 
-  <h1>Privacy Policy (English)</h1>
+  <!-- =========================================
+       ENGLISH
+  ========================================== -->
+  <h1 id="en">Privacy Policy</h1>
   <p class="muted">Last updated: <strong>2025-10-20</strong></p>
 
-  <p><strong>Controller:</strong> Biosys Biyomedikal Mühendislik A.Ş. (“Biosys”)</p>
-  <p><strong>Contact:</strong> <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a><br>
-     <strong>Address:</strong> Üniversiteler Mah. İhsan Doğramacı Blv. No:23/C, ODTÜ Teknokent, Çankaya/Ankara, Türkiye</p>
+  <div class="card">
+    <p><strong>Controller:</strong> Biosys Biyomedikal Mühendislik A.Ş. (“<em>Biosys</em>”)</p>
+    <p><strong>Application:</strong> <em>Bio2xy-Monitor</em></p>
+    <p><strong>Contact:</strong> <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a></p>
+    <p><strong>Address:</strong> Üniversiteler Mah. İhsan Doğramacı Blv. No:23/C, ODTÜ Teknokent, Çankaya/Ankara, Türkiye</p>
+  </div>
 
-  <h2>App Purpose</h2>
-  <p><strong>Bio2xy-Monitor</strong> is designed to <strong>display</strong> patient measurements generated by a home ventilator device. The app does <strong>not collect, process, persistently store, or share</strong> personal data on its own.</p>
+  <h2>1) Scope and Principle</h2>
+  <p>This policy explains how data are handled in the <em>Bio2xy-Monitor</em> mobile app. The app is designed solely to <strong>display</strong> measurements generated by a home ventilator. Accordingly, the app itself <strong>does not collect, process, persistently store, or share</strong> personal data.</p>
 
-  <h2>Data Collection</h2>
-  <p><strong>No personal data is collected by the app.</strong> The app does not collect or share identity, contact, location, device identifiers, cookies/ad IDs, etc. There are <strong>no third-party SDKs</strong> (ads/analytics/crash) embedded in the app.</p>
+  <h2>2) Definitions</h2>
+  <ul>
+    <li><strong>App data:</strong> Patient measurements generated by the ventilator device.</li>
+    <li><strong>Processing:</strong> Any operation performed on personal data (collection, storage, transfer, etc.).</li>
+  </ul>
 
-  <h2>Flow of Health Data</h2>
-  <p>Ventilator-generated patient measurements are only <em>displayed</em> by the app. Any transmission of such data (if applicable) to competent authorities/health information systems is performed by the <strong>ventilator device</strong> and/or authorized infrastructures. The <strong>Bio2xy-Monitor app does not transmit</strong> these data to servers.</p>
+  <h2>3) Data Flow & Architecture</h2>
+  <ul>
+    <li>The app <strong>displays</strong> ventilator-generated measurements in real time.</li>
+    <li>Any transmission of such data—where applicable—to competent health information systems/authorities is performed by the <strong>ventilator device</strong> and/or authorized infrastructures.</li>
+    <li>The <strong>Bio2xy-Monitor</strong> app <strong>does not transmit</strong> data to servers and does not maintain its own backend for this purpose.</li>
+  </ul>
 
-  <h2>Security & Retention</h2>
-  <p>No persistent storage is performed by the app; data are handled transiently for on-screen display. Any network security controls (if applicable) are provided by the device and relevant infrastructures.</p>
+  <h2>4) Categories Not Collected</h2>
+  <p>The app <strong>does not collect or share</strong> the following categories:</p>
+  <ul>
+    <li>Identity and contact information, user account data</li>
+    <li>Location data (GPS or network-based)</li>
+    <li>Device identifiers, ad IDs, cookies, or tracking data</li>
+    <li>Targeted advertising, analytics, or crash-reporting data</li>
+  </ul>
+  <p>There are also <strong>no third-party SDKs</strong> (ads/analytics/crash) embedded in the app.</p>
 
-  <h2>User Rights</h2>
-  <p>As the app does not process personal data, there is generally no data subject information to act upon. For privacy inquiries, contact <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a>.</p>
+  <h2>5) Security</h2>
+  <p>The app processes data transiently in memory for on-screen display and follows a data-minimization approach. Where network transmission occurs (e.g., via device/infrastructure), such transmission is covered by the <strong>device manufacturer’s/relevant infrastructure’s</strong> security controls.</p>
 
-  <h2>Children</h2>
-  <p>The app is not directed to children under 13, and we do not knowingly collect personal data from children.</p>
+  <h2>6) Retention</h2>
+  <p>The app performs <strong>no persistent storage</strong>. Data handled for display may reside temporarily in memory and is limited to the active session.</p>
 
-  <h2>Changes</h2>
-  <p>We may update this policy. Updates will be posted here with a revised “Last updated” date.</p>
-  <footer style="margin-top:40px;color:#777">© Biosys Biyomedikal Mühendislik A.Ş.</footer>
+  <h2>7) Children’s Privacy</h2>
+  <p>The app is <strong>not directed to children under 13</strong>, and we do not knowingly collect personal data from children.</p>
+
+  <h2>8) User Rights & Contact</h2>
+  <p>As no personal data are processed by the app, there is generally no data subject information to act upon. For privacy inquiries, please contact <a href="mailto:info@biosys.com.tr">info@biosys.com.tr</a>.</p>
+
+  <h2>9) Changes to this Policy</h2>
+  <p>We may update this policy. Updates will be posted on this page with a revised “Last updated” date. Should a future feature require personal-data processing, both the Google Play <em>Data Safety</em> disclosures and this policy will be updated accordingly.</p>
+
+  <footer>© Biosys Biyomedikal Mühendislik A.Ş.</footer>
 </body>
 </html>
